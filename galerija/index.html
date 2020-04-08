@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5db77d51c5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Drelona</title>
+</head>
+<body>
+    <header class="relative">
+        <div class="header-top-wrapper flex relative">
+            <div class="logo-wrapper flex-center-align">
+                <a href="../index.html"><img class="logo" src="../images/drelona-logo.svg" height="100"></a>
+            </div>
+            <nav class="desktop-nav-wrapper">
+                <ul class="flex">
+                    <li><a href="../index.html">Apie mus</a></li>
+                    <li><a href="../paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="#"><span class="main-color">Galerija</span></a></li>
+                    <li><a href="../kontaktai/index.html">Kontaktai</a></li>
+                </ul>
+            </nav>
+            <div class="header-animation-image absolute">
+                <img src="../images/renovacijos-darbai-vilniuje.svg" alt="Namu statyba Vilniuje" width="150px">
+            </div>
+        </div>
+        <div onclick="openMobileNav()" class="burger-wrapper absolute">
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+        </div>
+        <div class="mobile-nav-wrapper absolute">
+            <span class="mobile-nav-off absolute">&#10008;</span>
+            <ul class="mobile-nav-items flex">
+                <li><i class="fas fa-home"></i><a href="../index.html">Apie mus</a></li>
+                <li><i class="fas fa-hand-paper"></i><a href="../paslaugos/index.html">Paslaugos</a></li>
+                <li><i class="fas fa-camera"></i><a href="#">Galerija</a></li>
+                <li><i class="fas fa-info"></i><a href="../kontaktai/index.html">Kontaktai</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <h2 class="align-center">NUOTRAUKŲ GALERIJA</h2>
+        <article class="gallery-article flex">
+            <div class="gallery-container flex">
+                <div class="container relative">
+                    <div class="mySlides">
+                        <div class="numbertext"><span>1 / 6</span></div>
+                        <img src="../images/gallery/alternative-header.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext"><span>2 / 6</span></div>
+                        <img src="../images/gallery/architecture-1857175_1920.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext"><span>3 / 6</span></div>
+                        <img src="../images/gallery/architecture-3155975_1920.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext"><span>4 / 6</span></div>
+                        <img src="../images/gallery/blade-4403804_1920.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext"><span>5 / 6</span></div>
+                        <img src="../images/gallery/country-house-540796_1920.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext"><span>6 / 6</span></div>
+                        <img src="../images/gallery/silver-jubilee-bridge-402943_1920.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div class="caption-container">
+                        <p id="caption" class="align-center"></p>
+                    </div>
+                </div>
+                <div class="row flex">
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/alternative-header.jpg" onclick="currentSlide(1)" alt="Aprašymas apie foto 1">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/architecture-1857175_1920.jpg" onclick="currentSlide(2)" alt="Aprašymas apie foto 2">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/architecture-3155975_1920.jpg" onclick="currentSlide(3)" alt="Aprašymas apie foto 3">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/blade-4403804_1920.jpg" onclick="currentSlide(4)" alt="Aprašymas apie foto 4">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/country-house-540796_1920.jpg" onclick="currentSlide(5)" alt="Aprašymas apie foto 5">
+                    </div>    
+                    <div class="column">
+                        <img class="demo cursor" src="../images/gallery/silver-jubilee-bridge-402943_1920.jpg" onclick="currentSlide(6)" alt="Aprašymas apie foto 6">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-aside-wrapper">
+                <div class="comment-wrapper box-shadow flex-center-align">
+                    <h3>Kliento komentaras</h3>
+                    <div class="comment-icon-wrapper">
+                        <img src="../images/Drelona-klientu-atsiliepimai.svg" width="80px" alt="Drelona - klientų atsiliepimai">
+                    </div>
+                    <div class="comment-content">
+                        <p class ="align-center" id="name"></p>
+                        <i><p id="comment"></p></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer relative">
+        <div class="footer-wrapper flex">
+            <div class="footer-mini-nav">
+                <h2 class="main-color">Daugiau informacijos:</h2>
+                <ul>
+                    <li><a href="../index.html">Apie mus</a></li>
+                    <li><a href="../paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="#">Galerija</a></li>
+                    <li><a href="../kontaktai/index.html">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h2 class="main-color">Mūsų kontaktai:</h2>
+                <ul>
+                    <li><span class="main-color"><b>Adresas:</b></span> Lorem ipsum g. 77-71, Vilnius</li>
+                    <li><span class="main-color"><b>Tel.nr:</b></span>868990556</li>
+                    <li><span class="main-color"><b>El.paštas:</b></span><span class="emailSpan"></span></li>
+                    <li><span class="main-color"><b>Darbo laikas:</b></span>
+                        <ul>
+                            <li>I 8:00 - 18:00</li>
+                            <li>II 8:00 - 18:00</li>
+                            <li>III 8:00 - 18:00</li>
+                            <li>IV 8:00 - 18:00</li>
+                            <li>V 8:00 - 18:00</li>
+                            <li>VI 10:00 - 15:00</li>
+                            <li>VII - nedirbame</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo flex-center-align">
+                <img class="logo" src="../images/drelona-logo.svg" height="200px" alt="Drelona logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="main-color">Drelona</span>, 2020.</p>
+        </div>
+        <div class="social-links absolute">
+            <i class="fab fa-facebook fa-2x"></i>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

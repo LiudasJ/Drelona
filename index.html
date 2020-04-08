@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5db77d51c5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Drelona</title>
+</head>
+<body>
+    <header class="relative header">
+        <div class="header-top-wrapper flex relative">
+            <div class="logo-wrapper flex-center-align">
+                <a href="#"><img class="logo" src="images/drelona-logo.svg" height="100"></a>
+            </div>
+            <nav class="desktop-nav-wrapper">
+                <ul class="flex">
+                    <li><a href="#"><span class="main-color">Apie mus</span></a></li>
+                    <li><a href="paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="galerija/index.html">Galerija</a></li>
+                    <li><a href="kontaktai/index.html">Kontaktai</a></li>
+                </ul>
+            </nav>
+            <div class="header-animation-image absolute">
+                <img src="images/renovacijos-darbai-vilniuje.svg" alt="Namu statyba Vilniuje" width="150px">
+            </div>
+        </div>
+        <div class="introduction-header-wrapper">
+            <div class="title-wrapper flex flex-center-align">
+                <h1 class="main-color title">DRELONA</h1>
+                <p>aukščiausios kvalifikacijos darbuotojai, <br> 
+                    aukščiausios kokybės statybos darbai</p>
+            </div>
+            <div class="introduction-header-btns flex flex-center-align">
+                <div class="service-btn"><span><a href="paslaugos/index.html">Paslaugos</a></span></div>
+                <div class="alternative-btn"><span><a href="kontaktai/index.html">Kontaktai</a></span></div>
+            </div>
+        </div>
+        <div onclick="openMobileNav()" class="burger-wrapper absolute">
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+        </div>
+        <div class="mobile-nav-wrapper absolute">
+            <ul class="mobile-nav-items flex">
+                <li><i class="fas fa-home"></i><a href="#">Apie mus</a></li>
+                <li><i class="fas fa-hand-paper"></i><a href="paslaugos/index.html">Paslaugos</a></li>
+                <li><i class="fas fa-camera"></i><a href="galerija/index.html">Galerija</a></li>
+                <li><i class="fas fa-info"></i><a href="kontaktai/index.html">Kontaktai</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <article class="about-us-wrapper flex">
+            <div class="about-us-paragraph relative">
+                <h2 class="main-color">APIE MUS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi illo, quaerat necessitatibus quas earum debitis doloribus. Eius nulla cum totam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Repellat blanditiis aliquam itaque voluptates ipsa alias quo obcaecati neque sequi! Itaque optio doloremque harum! 
+                    Tempora voluptatum sapiente debitis eos aspernatur harum.</p>
+                <div class="about-us-btn service-btn absolute"><a href="paslaugos/index.html">Paslaugos</a></div>
+            </div>
+            <div class="about-us-img">
+                <span class="flex-center-align"><img class="about-img" src="images/drelona-statybos-vilniuje.svg" width="300px" alt="Drelona - statybų darbai Vilniuje"></span>
+            </div>
+        </article>
+        <article class="our-values-wrapper relative">
+            <div class="our-values-title"><h2 class="main-color">ĮMONĖS VERTYBĖS:</h2></div>
+            <div class="value-wrapper flex">
+                <div class="value relative">
+                    <div class="value-img absolute"><i class="far fa-user-circle"></i></div>
+                    <h2 class="main-color">Žmonės</h2>
+                    <p>mes tikime, jog žmonės, kurie dirba mūsų įmonėje, 
+                        yra sėkmingai įgyvendinamų statybos projektų pamatas.</p>
+                </div>
+                <div class="value relative">
+                    <div class="value-img absolute"><i class="far fa-star"></i></div>
+                    <h2 class="main-color">Kokybė</h2>
+                    <p>tik aukščiausia kokybe įvykdyti statybos darbai gali 
+                        pateisinti užsakovo lūkesčius.</p>
+                </div>
+                <div class="value relative">
+                    <div class="value-img absolute"><i class="fas fa-search"></i></div>
+                    <h2 class="main-color">Naujovės</h2>
+                    <p>aukščiausią statybos kokybę galima pasiekti tik 
+                        pasitelkiant inovatyviausius statinio statybos būdus.</p>
+                </div>
+                <div class="value relative">
+                    <div class="value-img absolute"><i class="fas fa-hard-hat"></i></div>
+                    <h2 class="main-color">Saugumas</h2>
+                    <p>darbas saugioje darbo aplinkoje, yra ne mažiau 
+                        svarbus nei prieš tai išvardintos Drelonos vertybės.</p>
+                </div>
+            </div>
+        </article>
+        <section class="form-section-wrapper flex">
+            <div class="form-title-wrapper flex-center-align">
+                <h2 class="main-color">Užpildykite formą</h2>
+            </div>
+            <div id="main-form" class="form-wrapper">
+                <form id="myForm" class="section-form flex-center-align" method="post" action="php/index.php">
+                    <h2 class="main-color">Išsiųskite užklausą:</h2>
+                    <div class="form-element flex">
+                        <label class="main-color">Jūsų vardas:</label><span class="name-warning"></span>
+                        <input class="form-input" onkeyup = "sendBtnActivation()" id ="name" name="fname" type="text" placeholder="Jonas">
+                    </div>
+                    <div class="form-element flex">
+                        <label class="main-color">Jūsų el.paštas:</label><span class="email-warning"></span>
+                        <input class="form-input" onkeyup = "sendBtnActivation()" id ="email" type="email" name="email" placeholder="j.jonaitis@epastas.lt">
+                    </div>
+                    <div class="form-element flex">
+                        <label class="main-color">Klauskite:</label><span class="question-warning"></span>
+                        <textarea class="form-input" onkeyup = "sendBtnActivation()" id ="textarea" class="textarea" rows="5" placeholder="..." name="comment"></textarea>
+                    </div>
+                    <div class="form-element">
+                        <input id="btnSubmit" type="submit" value="Siųsti" disabled>
+                    </div>
+                    <span id="result"></span>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer relative">
+        <div class="footer-wrapper flex">
+            <div class="footer-mini-nav">
+                <h2 class="main-color">Daugiau informacijos:</h2>
+                <ul>
+                    <li><a href="#">Apie mus</a></li>
+                    <li><a href="paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="galerija/index.html">Galerija</a></li>
+                    <li><a href="kontaktai/index.html">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h2 class="main-color">Mūsų kontaktai:</h2>
+                <ul>
+                    <li><span class="main-color"><b>Adresas:</b></span> Lorem ipsum g. 77-71, Vilnius</li>
+                    <li><span class="main-color"><b>Tel.nr:</b></span>868990556</li>
+                    <li><span class="main-color"><b>El.paštas:</b></span><span class="emailSpan"></span></li>
+                    <li><span class="main-color"><b>Darbo laikas:</b></span>
+                        <ul>
+                            <li>I 8:00 - 18:00</li>
+                            <li>II 8:00 - 18:00</li>
+                            <li>III 8:00 - 18:00</li>
+                            <li>IV 8:00 - 18:00</li>
+                            <li>V 8:00 - 18:00</li>
+                            <li>VI 10:00 - 15:00</li>
+                            <li>VII - nedirbame</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo flex-center-align">
+                <img class="logo" src="images/drelona-logo.svg" height="200px" alt="Drelona logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="main-color">Drelona</span>, 2020.</p>
+        </div>
+        <div class="social-links absolute">
+            <i class="fab fa-facebook fa-2x"></i>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

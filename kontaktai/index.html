@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5db77d51c5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Drelona</title>
+</head>
+<body>
+    <header class="relative">
+        <div class="header-top-wrapper flex relative">
+            <div class="logo-wrapper flex-center-align">
+                <a href="../index.html"><img class="logo" src="../images/drelona-logo.svg" height="100"></a>
+            </div>
+            <nav class="desktop-nav-wrapper">
+                <ul class="flex">
+                    <li><a href="../index.html">Apie mus</a></li>
+                    <li><a href="../paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="../galerija/index.html">Galerija</a></li>
+                    <li><a href="#"><span class="main-color">Kontaktai</span></a></li>
+                </ul>
+            </nav>
+            <div class="header-animation-image absolute">
+                <img src="../images/renovacijos-darbai-vilniuje.svg" alt="Namu statyba Vilniuje" width="150px">
+            </div>
+        </div>
+        <div onclick="openMobileNav()" class="burger-wrapper absolute">
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+            <div class="burger-item"></div>
+        </div>
+        <div class="mobile-nav-wrapper absolute">
+            <span class="mobile-nav-off absolute">&#10008;</span>
+            <ul class="mobile-nav-items flex">
+                <li><i class="fas fa-home"></i><a href="../index.html">Apie mus</a></li>
+                <li><i class="fas fa-hand-paper"></i><a href="../paslaugos/index.html">Paslaugos</a></li>
+                <li><i class="fas fa-camera"></i><a href="../galerija/index.html">Galerija</a></li>
+                <li><i class="fas fa-info"></i><a href="#">Kontaktai</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <article class="contacts-wrapper">
+            <div class="contacts-bg">
+                <div class="contacts-info flex">
+                    <div class="email-contact contact-element flex-center-align">
+                        <img class="contacts-img relative" src="../images/Drelona-el-pastas.svg" alt="Drelona - kontaktai" width="60px" height="60px">
+                        <p class="emailSpan"></p>
+                    </div>
+                    <div class="phone-contact contact-element flex-center-align">
+                        <img class="contacts-img relative" src="../images/drelona-kontaktai-telefono-nr.svg" width="80px" height="80px" alt="Drelona - kontaktai">
+                        <p>+37062351565</p>
+                    </div>
+                    <div class="adress-contact contact-element flex-center-align">
+                        <img class="contacts-img relative" class="location-img relative" src="../images/Drelona-adresas.svg" alt="Drelona - kontaktai" width="60px" height="60px">
+                        <p>Lorem ipsum str. 180A, Vilnius</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-maps-form-wrapper flex">
+                <div class="contact-form-wrapper">
+                    <h2 class="main-color">Kontaktinė informacija:</h2>
+                    <div class="contact-ul-wrapper">
+                        <ul class="contact-ul flex">
+                            <li><i class="far fa-envelope"></i><span class="emailSpan"></span></li>
+                            <li><i class="fas fa-mobile-alt"></i>+37062351565</li>
+                            <li><i class="fas fa-map-pin"></i>Taikos pr. 77-71, Kaunas</li>
+                        </ul>
+                    </div>
+                    <div class="service-btn form-btn">
+                        <a href="../index.html#myForm">Užpildykite formą!</a>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <h2 class="main-color">Buveinės adresas:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.6180932154684!2d25.28522861510589!3d54.71634197891322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96b3518a1931%3A0x4b3b71295dc9fca!2sKalvarij%C5%B3%20g.%20137%2C%20Vilnius%2008221!5e0!3m2!1slt!2slt!4v1584030269610!5m2!1slt!2slt" 
+                    width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer relative">
+        <div class="footer-wrapper flex">
+            <div class="footer-mini-nav">
+                <h2 class="main-color">Daugiau informacijos:</h2>
+                <ul>
+                    <li><a href="../index.html">Apie mus</a></li>
+                    <li><a href="../paslaugos/index.html">Paslaugos</a></li>
+                    <li><a href="../galerija/index.html">Galerija</a></li>
+                    <li><a href="#">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h2 class="main-color">Mūsų kontaktai:</h2>
+                <ul>
+                    <li><span class="main-color"><b>Adresas:</b></span> Lorem ipsum g. 77-71, Vilnius</li>
+                    <li><span class="main-color"><b>Tel.nr:</b></span>868990556</li>
+                    <li><span class="main-color"><b>El.paštas:</b></span><span class="emailSpan"></span></li>
+                    <li><span class="main-color"><b>Darbo laikas:</b></span>
+                        <ul>
+                            <li>I 8:00 - 18:00</li>
+                            <li>II 8:00 - 18:00</li>
+                            <li>III 8:00 - 18:00</li>
+                            <li>IV 8:00 - 18:00</li>
+                            <li>V 8:00 - 18:00</li>
+                            <li>VI 10:00 - 15:00</li>
+                            <li>VII - nedirbame</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo flex-center-align">
+                <img class="logo" src="../images/drelona-logo.svg" height="200px" alt="Drelona logo">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span class="main-color">Drelona</span>, 2020.</p>
+        </div>
+        <div class="social-links absolute">
+            <i class="fab fa-facebook fa-2x"></i>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
